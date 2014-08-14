@@ -1,11 +1,12 @@
 require 'fizzBuzz'
 
 describe 'fizzBuzz' do
+
 	it 'should know 3 is divisible by 3' do
-	expect(is_divisible_by_three?(3)).to be true
+	  expect(is_divisible_by_three?(3)).to be true
 	end
 
-  it 'should know 1 is not divisible by 3' do
+	it 'should know 1 is not divisible by 3' do
     expect(is_divisible_by_three?(1)).to be false
   end
 
@@ -32,6 +33,11 @@ describe 'fizzBuzz' do
   it 'should return Buzz when the number is divisible by 5' do
     expect(fizzBuzz(5)).to eq "Buzz"
   end
+
+  it 'should return FizzBuzz when the number is divisible by 3 and 5' do
+    expect(fizzBuzz(15)).to eq "FizzBuzz"
+  end
+
 
 
 end

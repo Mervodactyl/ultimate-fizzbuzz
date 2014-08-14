@@ -13,4 +13,8 @@ describe 'fizzbuzz' do
     expect(is_divisible_by_five?(5)).to be true
   end
 
+  it 'should know 1 is not divisible by 5' do
+    expect(is_divisible_by_five?(1)).to be false
+  end
+
 end
